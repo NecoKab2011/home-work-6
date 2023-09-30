@@ -7,11 +7,35 @@
     --bg-color: #2f303a;
     --footer-ct: rgba(255, 255, 255, 0.6);
   }
+
+
+
+  a{
+    text-decoration: none;
+  }
+
+  li{
+    list-style: none;  
+    }
+    
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul{
+    margin: 0px;
+  }
   
   body {
     /* font-family: 'Raleway', sans-serif; */
     font-family: "Roboto", sans-serif;
+    font-style: normal;
   }
+
   
   .visually-hidden {
       position: absolute !important;
@@ -40,11 +64,21 @@
     color: var(--header-logo);
   }
   
+
+
   .logo-style:hover,
   .logo-style:focus{
       color: var(--accent-color);
   }
   
+  .menu-list{
+    display: flex;
+  }
+
+  .menu-item:not(:first-child){
+    margin-left: 50px;
+  }
+
   .menu-link {
     color: var(--title-color);
     font-size: 14px;
@@ -68,12 +102,22 @@
     letter-spacing: 0.28px;
   }
   
+  .header-cont:not(:first-child){
+    margin-left: 50px;
+  }
+
   .header-cont:hover,
   .header-cont:focus{
   color: var(--accent-color);
   }
   
   /*  Герой*/
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--bg-color);
+  }
+
   .hero {
     background-color: var(--bg-color);
   }
@@ -90,6 +134,9 @@
   }
   
   .hero-btn {
+    padding: 10px 32px;
+ 
+    
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -132,7 +179,44 @@
   
   /*  Чим ми займаємося */
   
+  /* Портфоліо */
+.portfolio-btn{
+    color: var(--title-color);
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.62;
+      letter-spacing: 0.48px;
   
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border: none;
+
+  }
+  
+  .portfolio-btn:hover,
+  .portfolio-btn:focus{
+  color: #FFF;
+  background-color: var(--accent-color);
+  }
+  
+  /* проекти */
+  .portfolio-title{
+    color: var(--title-color);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 2.00;
+      letter-spacing: 1.08px;
+  }
+  
+  .portfolio-tex{
+  color: var(--basic-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+  }
   
   /* footer */
   .footer {
@@ -147,3 +231,25 @@
   .logo-footer:focus{
   color: var(--accent-color);
   }
+
+  .footer-ct{
+    color:var(--footer-ct);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.42px;
+    }
+
+    .footer-adress{
+        color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+    }
+
+    .footer-ct:hover,
+.footer-ct:focus{
+  color: var(--accent-color);
+}
