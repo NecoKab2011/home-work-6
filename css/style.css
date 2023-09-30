@@ -8,7 +8,11 @@
     --footer-ct: rgba(255, 255, 255, 0.6);
   }
 
-
+  .container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
   a{
     text-decoration: none;
