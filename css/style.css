@@ -52,8 +52,10 @@
       overflow: hidden;
   }
   
-  /*  header */
+  /* Хедер  */
   
+
+
   .logo {
     color: var(--accent-color);
     font-family: "Raleway", sans-serif;
@@ -139,6 +141,7 @@
   
   .hero-btn {
     padding: 10px 32px;
+    
  
     
     color: #fff;
@@ -162,6 +165,20 @@
   }
   
   /* Наші преваги */
+
+  .visually-hidden-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30; 
+  }
+
+
+
   .advantages-tile{
   color: var(--title-color);
       font-size: 14px;
@@ -183,6 +200,39 @@
   
   /*  Чим ми займаємося */
   
+  .owe-work-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 30;
+    justify-content: space-between;
+
+    }
+
+  .owe-work-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Наша команда */
+
+.team-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 30;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+} 
+    .team-title{
+    display: flex;
+    justify-content: center;
+    }
+
+
   /* Портфоліо */
 .portfolio-btn{
     color: var(--title-color);
