@@ -292,9 +292,7 @@
    
     .team-box{
         display: flex;
-        gap: 30px;
-        flex-direction: row; 
-        justify-content: space-between;
+        gap: 30px; 
         text-align: center;
     }
 
@@ -303,6 +301,7 @@
    }
 
   /* Портфоліо */
+
 .portfolio-btn{
     color: var(--title-color);
       text-align: center;
