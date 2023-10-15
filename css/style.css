@@ -273,31 +273,32 @@
 
 
 
-  /* Наша команда */
+  /*  Наша команда */
+  
+  .team{
+    padding-bottom: 94px;
+  }
 
-.team{
-padding-bottom: 94px;
-}
 
-.team-box{
-    display: flex;
-    gap: 30px;
-    flex-direction: row; 
-    justify-content: space-between;
-    
-    text-align: center;
-    
 
-} 
-    .team-title{
+
+.team-title{
     display: flex;
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
     font-size: 36px;
     }
+   
+    .team-box{
+        display: flex;
+        gap: 30px;
+        flex-direction: row; 
+        justify-content: space-between;
+        text-align: center;
+    }
 
-   .team-name{
+    .team-name{
     margin-bottom: 10px;
    }
 
