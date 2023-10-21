@@ -367,6 +367,10 @@
     gap: 30px;
   }
 
+  .portfolio-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
   /* footer */
   .footer {
     background-color: var(--bg-color);
