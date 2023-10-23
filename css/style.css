@@ -12,6 +12,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
   }
 
  .list{
@@ -151,6 +152,7 @@
   }
   
   .hero-title {
+    font-family: Roboto;
     color: #fff;
     text-align: center;
     font-size: 44px;
@@ -303,6 +305,8 @@
   /* Портфоліо */
 
 .portfolio-btn{
+  padding: 6px 24px;
+  border: none;
     color: var(--title-color);
       text-align: center;
       font-size: 16px;
@@ -331,12 +335,14 @@
     color: var(--title-color);
       font-size: 18px;
       font-weight: 700;
-      line-height: 2.00;
+      line-height: 2;
       letter-spacing: 1.08px;
   }
   
   .portfolio-title{
-    margin-bottom: 4px;
+    margin-top: 20px;
+    padding-left: 24px;
+    border-radius: 4px;
   }
 
   .section-portfolio{
@@ -348,12 +354,18 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    gap: 9px;
+    
+}
+
+.list-btn > .item {
+    margin-left: 8px;
 }
 
 
+  .portfolio-text{
+    padding-left: 24px;
+   
 
-  .portfolio-tex{
   color: var(--basic-color);
     font-size: 16px;
     font-weight: 400;
@@ -370,6 +382,9 @@
   .portfolio-list > .item {
     flex-basis: calc((100% - 60px) / 3);
 }
+
+
+   
 
   /* footer */
   .footer {
