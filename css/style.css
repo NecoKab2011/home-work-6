@@ -66,6 +66,7 @@
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+    font-family: "Roboto", sans-serif;
   }
 
 
@@ -221,12 +222,69 @@
     flex-direction: row;
     gap: 30px; 
     padding: 0;
+    margin-bottom: 55px;
   }
 
   .advantages-item{
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
     
     max-width: 270px;
     gap: 30px;
+    
+  }
+
+  .advantages-item:nth-child(1):before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url(../img/antenna.jpg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .advantages-item:nth-child(2):before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url(../img/clock.jpg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .advantages-item:nth-child(3):before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url(../img/diagram.jpg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .advantages-item:nth-child(4):before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url(../img/astronaut.jpg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
   }
 
   .advantages-title{
@@ -331,19 +389,6 @@
   
   
   /* проекти */
-  .portfolio-title{
-    color: var(--title-color);
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 2;
-      letter-spacing: 1.08px;
-  }
-  
-  .portfolio-title{
-    margin-top: 20px;
-    padding-left: 24px;
-    border-radius: 4px;
-  }
 
   .section-portfolio{
     margin-top: 94px;
@@ -361,9 +406,23 @@
     margin-left: 8px;
 }
 
+.portfolio-title{
+  margin-top: 20px;
+  padding-left: 24px;
+  
+  
 
-  .portfolio-text{
-    padding-left: 24px;
+  color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+ .portfolio-text{
+  padding-left: 20px;
+
+    
    
 
   color: var(--basic-color);
@@ -377,14 +436,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
   }
 
+  
   .portfolio-list > .item {
     flex-basis: calc((100% - 60px) / 3);
+    
+    padding-bottom: 20px;
 }
 
-
-   
 
   /* footer */
   .footer {
