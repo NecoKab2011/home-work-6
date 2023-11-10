@@ -150,6 +150,7 @@
 
   .hero {
     background-color: var(--bg-color);
+    url(../images/hero.png);
   }
   
   .hero-title {
@@ -354,9 +355,11 @@
         display: flex;
         gap: 30px; 
         text-align: center;
+
     }
 
     .team-name{
+    margin-top: 30px;
     margin-bottom: 10px;
    }
 
