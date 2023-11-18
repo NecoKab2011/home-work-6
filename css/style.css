@@ -420,12 +420,12 @@
   
 }
   
-  
-  
 
   /* проекти */
 
-  
+  .header {
+    border-bottom: 1px solid #ececec;
+}
   
   .section-portfolio {
     margin-top: 94px;
@@ -479,6 +479,8 @@
 
   .portfolio-item:hover,
   .portfolio-item:focus {
+    
+   
     border: 1px solid #EEE;
 background: #FFF;
 box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -498,10 +500,13 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0
 background: #FFF;
 }
 
+
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     border: 1px solid #eee;
     background-color: #fff;
+    
     border-radius: 4px;
 background: #2196F3;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
@@ -535,7 +540,7 @@ background: #2196F3;
   }
 
   .footer-ct {
-    font-family: Roboto;
+    font-family: "Roboto";
     color:var(--footer-ct);
       font-size: 14px;
       font-weight: 400;
