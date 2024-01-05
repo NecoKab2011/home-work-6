@@ -61,11 +61,14 @@
   
   /* Хедер  */
   
+  .header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
   .header-box{
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
     font-family: "Roboto", sans-serif;
   }
 
@@ -112,12 +115,28 @@
   .menu-link:hover,
   .menu-link:focus{
   color: var(--accent-color);
+  outline: none;
   }
   
   .address{
     display: flex;
     margin-left: auto;
-    gap: 50px;
+    
+    }
+
+    .address > .contakts {
+      margin-left: 50px;
+  }
+
+  .header-svg {
+    margin-right: 10px;
+  }
+
+
+
+  .contakts:hover .header-svg {
+    fill: var(--accent-color);
+    cursor: pointer;
   }
 
   .header-cont {
@@ -137,8 +156,14 @@
   .header-cont:hover,
   .header-cont:focus{
   color: var(--accent-color);
+  outline: none;
   }
   
+  .header-svg {
+    fill: #757575;
+  }
+
+
   /*  Герой*/
   .hero {
     padding-top: 200px;
@@ -357,10 +382,6 @@
     background-color: #f5f4fa;
 }
   
-
-
-
-
 .team-title{
     display: flex;
     justify-content: center;
@@ -416,13 +437,107 @@ letter-spacing: 0.48px;
     
    }
 
+   .sn-icon {
+    width: 20px;
+    height: 20px;
+    fill: rgba(175, 177, 184, 1);
+  }
+
+
+   .sn-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .sn-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sn-item:hover {
+    background-color: var(--accent-color);
+    }
+
+  .sn-item:focus {
+    background-color: var(--accent-color);
+    outline: none;
+    }
+
+  .sn-item:hover
+  .sn-icon {
+    fill: var(--footer-logo); 
+  }
+
+  .sn-link {
+    width: 20px;
+    height: 20px;
+  }
+
+  
 /* Постійні клієнти */
 
-.icon-conpany {
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-item {
+  border-radius: 4px;
   width: 170px;
   height: 92px;
 }
 
+.company-link {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+
+.company-link:hover,
+.company-link:focus{
+  border: 1px solid var(--accent-color);
+}
+
+.icon-conpany {
+  width: 170px;
+  height: 92px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-conpany:hover,
+.icon-conpany:focus {
+  fill: var(--accent-color);
+}
+
+.icon-conpany {
+  outline: none;
+}
+
+.company-link:focus{
+  outline: none;
+}
 
   /* Портфоліо */
 
@@ -546,12 +661,10 @@ background: #2196F3;
   /* footer */
   .footer {
     background-color: var(--bg-color);
+    padding: 60px 0;
   }
   
-  .footer-box {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  
 
   .logo-footer {
     color: var(--footer-logo);
@@ -592,4 +705,30 @@ letter-spacing: 0.42px;
     .footer-ct:hover,
 .footer-ct:focus {
   color: var(--accent-color);
+}
+
+.footer-box {
+  display: flex;
+  gap: 95px;
+}
+
+.footer-sn {
+  padding-top: 12px;
+}
+
+.footer-title {
+  color: var(--footer-logo);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sn-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-sn-icon {
+  fill: var(--footer-logo);
 }
