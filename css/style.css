@@ -86,9 +86,7 @@
   .logo-style {
     color: var(--header-logo);
   }
-  
-
-
+ 
   .logo-style:hover,
   .logo-style:focus{
       color: var(--accent-color);
@@ -103,6 +101,21 @@
     margin-left: 50px;
   }
 
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item:nth-child(1)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--accent-color);
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    top: 45px;
+  }
+
   .menu-link {
     color: var(--title-color);
     font-size: 14px;
@@ -111,13 +124,15 @@
     line-height: normal;
     letter-spacing: 0.28px;
   }
-  
+
   .menu-link:hover,
   .menu-link:focus{
   color: var(--accent-color);
   outline: none;
   }
-  
+
+
+
   .address{
     display: flex;
     margin-left: auto;
@@ -564,125 +579,9 @@ letter-spacing: 0.48px;
   outline: none;
 }
 
-  /* Портфоліо */
 
-.portfolio-btn{
-  padding: 6px 24px;
-  border: none;
-    color: var(--title-color);
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.62;
-      letter-spacing: 0.48px;
+
   
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    cursor: pointer;
-
-  }
-  
-
-
-  .portfolio-btn:hover,
-  .portfolio-btn:focus {
-  color: #FFF;
-  background-color: var(--accent-color);
-  
-}
-  
-
-  /* проекти */
-
-  .header {
-    border-bottom: 1px solid #ececec;
-}
-  
-  .section-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
-  }
-
-  .list-btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    
-}
-
-.list-btn > .p-item {
-    margin-left: 8px;
-    
-}
-
-.portfolio-title {
-  margin-top: 20px;
-  padding-left: 24px;
-  
-  
-
-  color: var(--title-color);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-}
-
- .portfolio-text {
-  padding-left: 20px;
-
-    
-   
-
-  color: var(--basic-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
-  }
-  
-  .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-  }
-
-  .portfolio-item:hover,
-  .portfolio-item:focus {
-    
-   
-    border: 1px solid #EEE;
-background: #FFF;
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  }
-  
-  .portfolio-list > .item {
-    flex-basis: calc((100% - 60px) / 3);
-    
-    padding-bottom: 20px;
-   
-    
-}
-
-.portfolio-item {
-  border: 1px solid #EEE;
-
-background: #FFF;
-}
-
-
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    border: 1px solid #eee;
-    background-color: #fff;
-    
-    border-radius: 4px;
-background: #2196F3;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
-}
   /* footer */
   .footer {
     background-color: var(--bg-color);
@@ -866,6 +765,8 @@ letter-spacing: 0.42px;
   position: relative;
 }
 
+
+
 .no-scroll {
   overflow: hidden;
 }
@@ -949,6 +850,7 @@ letter-spacing: 0.42px;
   letter-spacing: 0.12px;
   margin-bottom: 20px;
   margin-top: 4px;
+  resize: none;
 }
 
 .modal-message:hover,
