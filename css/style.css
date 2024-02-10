@@ -789,6 +789,13 @@ transition-property: color;
 
 /* Модальне вікно */
 
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -799,11 +806,7 @@ transition-property: color;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -815,6 +818,8 @@ transition-property: color;
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding: 40px;
   position: relative;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 250ms cubic-bezier(.06,1.03,.47,.97);
 }
 
 
@@ -832,6 +837,9 @@ transition-property: color;
   position: absolute;
   top: 8px;
   right: 8px;
+  transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -870,6 +878,9 @@ transition-property: color;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
+  transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -882,6 +893,9 @@ transition-property: color;
   left: 12px;
   top: 29px;
   fill: var(--title-color);
+  transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover + .modal-icon,
@@ -903,6 +917,9 @@ transition-property: color;
   margin-bottom: 20px;
   margin-top: 4px;
   resize: none;
+  transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-message:hover,
@@ -992,9 +1009,14 @@ transition-property: color;
   padding: 10px 52px;
   margin: 30px auto 0;
   display: block;
+  transition-property: border, color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  background: #046ec3;
+  background-color: var(--footer-logo);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
