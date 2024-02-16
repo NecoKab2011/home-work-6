@@ -113,6 +113,27 @@ body {
   border-radius: 2px;
   height: 4px;
   top: 45px;
+  animation-name: header-after;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes header-after {
+0% {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+50% {
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+
+100% {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
 }
 
 .menu-link {

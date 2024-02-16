@@ -119,7 +119,28 @@
     border-radius: 2px;
     height: 4px;
     top: 45px;
+    animation-name: header-after;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
   }
+
+@keyframes header-after {
+  0% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale3d(0, 0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
 
   .menu-link {
     color: var(--title-color);
@@ -239,7 +260,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    animation-name: hero-title-move;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    
   }
+
+@keyframes hero-title-move {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
   
   .hero-btn {
     padding: 10px 32px;
@@ -429,7 +464,22 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+     animation-name: owe-work-title-move;
+    animation-duration: 5s;
+    animation-iteration-count: unset;
+    
+  }
+
+@keyframes owe-work-title-move {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
+
 
   /*  Наша команда */
   
