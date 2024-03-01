@@ -1,0 +1,46 @@
+@import "./base/root";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/visually-hidden";
+@import "./base/container";
+
+@import "./utils/header";
+@import "./sections/hero";
+@import "./sections/advantages";
+@import "./sections/owe-work";
+@import "./sections/team";
+@import "./sections/clients";
+@import "./utils/footer";
+@import "./sections/modal";
+
+.menu-item:nth-child(1)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--accent-color);
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    top: 45px;
+    animation-name: header-after;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes header-after {
+  0% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: scale3d(0, 0, 0);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  }
