@@ -1,107 +1,112 @@
 .team{
     padding-bottom: 94px;
     background-color: #f5f4fa;
+
+    &__title{
+      display: flex;
+      justify-content: center;
+      margin-top: 94px;
+      margin-bottom: 50px;
+      font-size: 36px;
+      }
+     
+      &__box{
+          display: flex;
+          gap: 30px;  
+          text-align: center;
+          
+      }
+  
+      &__box > &__item {
+      flex-basis: calc((100% - 90px) / 4);
+      border-radius: 0px 0px 4px 4px;
+      background: #fff;
+      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+      &__name{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #212121;
+  
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+     }
+  
+      &__profession {
+      color: #757575;
+  
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+      }
+  
+     &__item {
+      
+      padding-bottom: 30px;
+      background: #FFF;
+      
+     }
+
+     &-sn__icon {
+      width: 20px;
+      height: 20px;
+      fill: rgba(175, 177, 184, 1);
+    }
+  
+  
+     &-sn__list {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+  
+    &-sn__item {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        background-color: $accent-color;
+        transition-property: background-color;
+        }
+    
+      &:focus {
+        background-color: $accent-color;
+        outline: none;
+        transition-property: background-color;
+        }
+    }
+  
+    
+  
+    &-sn__item:hover
+    &-sn__icon {
+      fill: $footer-logo; 
+      transition-property: fill;
+    }
+  
+    &-sn__link {
+      width: 20px;
+      height: 20px;
+    }
 }
   
-.team-title{
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
-    font-size: 36px;
-    }
-   
-    .team-box{
-        display: flex;
-        gap: 30px; 
-        text-align: center;
-        
-    }
-
-    .team-box > .team-item {
-    flex-basis: calc((100% - 90px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    background: #fff;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-    .team-name{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #212121;
-
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.48px;
-   }
-
-    .team-profession {
-    color: #757575;
-
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
-    }
-
-   .team-item {
-    
-    padding-bottom: 30px;
-    background: #FFF;
-    
-   }
-
-   .sn-icon {
-    width: 20px;
-    height: 20px;
-    fill: rgba(175, 177, 184, 1);
-  }
 
 
-   .sn-list {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .sn-item {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .sn-item:hover {
-    background-color: var(--accent-color);
-    transition-property: background-color;
-    }
-
-  .sn-item:focus {
-    background-color: var(--accent-color);
-    outline: none;
-    transition-property: background-color;
-    }
-
-  .sn-item:hover
-  .sn-icon {
-    fill: var(--footer-logo); 
-    transition-property: fill;
-  }
-
-  .sn-link {
-    width: 20px;
-    height: 20px;
-  }
+  

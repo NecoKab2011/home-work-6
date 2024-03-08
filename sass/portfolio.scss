@@ -1,4 +1,4 @@
-@import "./base/root";
+@import "./base/vars";
 @import "./base/reset";
 @import "./base/fonts";
 @import "./base/visually-hidden";
@@ -8,34 +8,34 @@
 @import "./sections/portfolio-sections/portfolio";
 @import "./utils/footer";
 
-.menu-item:nth-child(2)::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: var(--accent-color);
-    width: 100%;
-    border-radius: 2px;
-    height: 4px;
-    top: 45px;
-    animation-name: header-after;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+// .header__item:nth-child(2)::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     background-color: var(--accent-color);
+//     width: 100%;
+//     border-radius: 2px;
+//     height: 4px;
+//     top: 45px;
+//     animation-name: header-after;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
     
-  }
+//   }
   
-  @keyframes header-after {
-  0% {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
+//   @keyframes header-after {
+//   0% {
+//     transform: scale3d(1, 1, 1);
+//     opacity: 1;
+//   }
   
-  50% {
-    transform: scale3d(0, 0, 0);
-    opacity: 0;
-  }
+//   50% {
+//     transform: scale3d(0, 0, 0);
+//     opacity: 0;
+//   }
   
-  100% {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-  }
+//   100% {
+//     transform: scale3d(1, 1, 1);
+//     opacity: 1;
+//   }
+//   }
