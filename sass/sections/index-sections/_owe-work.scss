@@ -28,17 +28,12 @@
       width: 100%;
       height: 70px;
       bottom: 0px;
-      background-color: rgba(47, 48, 58, 0.8);
+      background-color: $owe-work-bg;
       z-index: 3;
     }
   
     &__title2 {
-      color: #fff;
-      text-align: center;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include text($color: $footer-logo, $size: 14px, $weight: 700);
       letter-spacing: 0.42px;
       text-transform: uppercase;
        animation-name: owe-work-title-move;

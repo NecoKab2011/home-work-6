@@ -2,11 +2,8 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: $bg-color;
-    display: flex;
+    @include flex($justify: start, $align: start);
 
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -20,13 +17,9 @@
       url(../img/hero.jpg);
 
       &__title {
+        @include text($color: $footer-logo, $size: 44px, $weight: 900);
         font-family: Roboto;
-        color: #fff;
         text-align: center;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.36;
         letter-spacing: 2.64px;
         text-transform: uppercase;
         max-width: 696px;
@@ -57,35 +50,9 @@
       
       &__btn {
         padding: 10px 32px;
-        color: #fff;
-        text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.87;
-        letter-spacing: 0.96px;
-        cursor: pointer;
-        border-radius: 4px;
-        background: #2196f3;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        transition-property: color, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      border: none;
-    
-      &:hover,
-    &:focus{
-        color: $accent-color;
-        background-color: #fff;
-        transition-property: color, background-color;
-    }
-    }
+        @extend %button-style;
   }
-
+}
 
   
   

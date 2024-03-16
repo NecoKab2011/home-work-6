@@ -3,12 +3,8 @@
     padding: 60px 0;
 
     &__logo {
-      color: $accent-color;
+      @include text($color: $accent-color, $size: 26px, $weight: 700);
       font-family: "Raleway", sans-serif;
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
       letter-spacing: 0.78px;
   }
   &__style {
@@ -34,12 +30,8 @@
   }
 
   &__ct {
-   color: rgba(255, 255, 255, 0.60);
+    @include text($color: $footer-ct, $size: 14px, $weight: 400);
 font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
 letter-spacing: 0.42px;
 transition-property: color;
     transition-duration: 250ms;
@@ -47,11 +39,7 @@ transition-property: color;
     }
 
     &__adress {
-        color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
+      @include text($color: $footer-logo, $size: 14px, $weight: 400);
 letter-spacing: 0.42px;
 transition-property: color;
     transition-duration: 250ms;
@@ -67,6 +55,7 @@ transition-property: color;
 }
 
 &__box {
+  @include flex($justify: start, $align: start);
   display: flex;
   gap: 95px;
 }
@@ -76,15 +65,14 @@ transition-property: color;
 }
 
 &__title {
-  color: $footer-logo;
-  font-size: 14px;
-  font-weight: 700;
+  @include text($color: $footer-logo, $size: 14px, $weight: 700);
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 &__sn-list {
+  @include flex($align: start);
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -92,16 +80,14 @@ transition-property: color;
 }
 
 &__double-item {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $footer-svg;
 }
 
 &__double-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,16 +120,14 @@ transition-property: color;
 }
 
 &__title {
-  color: $footer-logo;
-  font-size: 14px;
-  font-weight: 700;
+  @include text($color: $footer-logo, $size: 14px, $weight: 700);
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 &__label {
-  display: flex;
+  @include flex($justify: start, $align: start);
   gap: 12px;
 }
 
@@ -161,10 +145,7 @@ transition-property: color;
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  color: $footer-logo;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
+  @include text($color: $footer-logo, $size: 16px, $weight: 400);
   letter-spacing: 0.48px;
   transition-property: border;
   transition-duration: 250ms;
@@ -175,21 +156,14 @@ transition-property: color;
     transition-property: border;
   }
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
+    @include text($color: $footer-ct, $size: 16px, $weight: 400);
     letter-spacing: 0.48px;
   }
 }
 
 &__btn {
-  display: flex;
-  align-items: center;
-  color: $footer-logo;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
+  @include text($color: $footer-logo, $size: 16px, $weight: 700);
+  @include flex($justify: start);
   letter-spacing: 0.96px;
   border-radius: 4px;
   background: $accent-color;
