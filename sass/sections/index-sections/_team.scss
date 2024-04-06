@@ -1,18 +1,40 @@
 .team {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   background-color: $btn-bg;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+
   &__title {
-    @include flex($justify: center, $align: start);
-    margin-top: 94px;
+    @include flex($justify: start, $align: start);
+    padding-top: 60px;
     margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 28px;
+    padding-left: 138px;
+
+    @media screen and (min-width: 1200px) {
+      @include flex($justify: center, $align: start);
+      padding-top: 94px;
+      font-size: 36px;
+    }
+
   }
 
   &__box {
     @include flex($justify: start, $align: start);
     gap: 30px;
     text-align: center;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flex($justify: center, $align: start);
+
+    }
   }
 
   &__box > &__item {
@@ -40,7 +62,9 @@
 
   &__item {
     padding-bottom: 30px;
+    margin-bottom: 30px;
     background: $footer-logo;
+    width: 450px;
   }
 
   &-sn__icon {

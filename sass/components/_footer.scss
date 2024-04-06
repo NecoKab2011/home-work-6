@@ -1,12 +1,15 @@
 .footer {
     background-color: $bg-color;
     padding: 60px 0;
+    max-width: 480px;
 
     &__logo {
       @include text($color: $accent-color, $size: 26px, $weight: 700);
       font-family: "Raleway", sans-serif;
       letter-spacing: 0.78px;
+      
   }
+
   &__style {
     color: $footer-logo;
     transition-property: color;
@@ -36,7 +39,7 @@ letter-spacing: 0.42px;
 transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
 
     &__adress {
       @include text($color: $footer-logo, $size: 14px, $weight: 400);
@@ -56,8 +59,8 @@ transition-property: color;
 
 &__box {
   @include flex($justify: start, $align: start);
-  display: flex;
   gap: 95px;
+
 }
 
 &__sn {
@@ -72,11 +75,14 @@ transition-property: color;
 }
 
 &__sn-list {
-  @include flex($align: start);
   display: flex;
-  gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 16px;
+
+
+  
 }
 
 &__double-item {
@@ -188,6 +194,6 @@ transition-property: color;
 }
   }
   
-  
+
 
   

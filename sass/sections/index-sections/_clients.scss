@@ -1,11 +1,20 @@
 .clients {
+  padding: 60px 0;
+
+@media screen and (min-width: 1200px) {
   padding: 94px 0;
+}
 
   &__title {
-    @include text($color: $title-color, $size: 36px, $weight: 700);
-    letter-spacing: 1.08px;
+    @include text($color: $title-color, $size: 28px, $weight: 700);
+    letter-spacing: 0.84px;
     margin-bottom: 50px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    @include text($color: $title-color, $size: 36px, $weight: 700);
+    letter-spacing: 1.08px;
+    }
   }
 
   &__list {
@@ -15,19 +24,36 @@
 
   &__item {
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__company-link {
     display: block;
     border-radius: 4px;
     border: 1px solid $company-border;
-    width: 170px;
+    width: 210px;
     height: 92px;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
@@ -43,6 +69,7 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:hover,
     &:focus {

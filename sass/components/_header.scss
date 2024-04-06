@@ -1,6 +1,16 @@
-.header{
-    padding-top: 24px;
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+    @media screen and (min-width: 786px) {
+      padding-top: 26px;
+    padding-bottom: 26px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
     padding-bottom: 25px;
+    }
 
     &__box{
       @include flex($justify: start);
@@ -8,9 +18,14 @@
     }
 
     &__logo {
-    @include text($color: $accent-color, $size: 26px, $weight: 700);
+    @include text($color: $accent-color, $size: 24px, $weight: 700);
     font-family: "Raleway", sans-serif;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+
+    @media screen and (min-width:1200px) {
+      @include text($color: $accent-color, $size: 26px, $weight: 700);
+      letter-spacing: 0.78px;
+    }
     }
 
   &__style {
@@ -28,8 +43,13 @@
 
   
   &__list{
-    @include flex($justify: start, $align: start);
+    display: none;
+    gap: 50px;
     margin-left: 93px;
+    @media screen and (min-width: 768px) {
+      @include flex($justify: start, $align: start);
+    }
+    
     } 
 
     &__item:not(:first-child){
@@ -58,13 +78,20 @@
   
 
   &__address{
-    @include flex($justify: start, $align: start);
-    margin-left: auto;
-    
-    & > .header__contakts {
-      margin-left: 50px;
-  }
+      display: none;
+
+
+    @media screen and (min-width: 768) {
+      display: block;
     }
+
+    @media screen and (min-width: 1200) {
+      @include flex($justify: start, $align: start);
+      display: flex;
+      margin-left: 50px;
+      
+    }
+
 
 
     &__svg {
@@ -106,16 +133,4 @@
       }
     }
   }
-  
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-  
+}
