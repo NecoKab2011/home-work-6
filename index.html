@@ -62,10 +62,15 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="header__menu" data-menu-open>
+          <svg class="header__svg-menu" width="40" height="40">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-     <main>
+    <main>
       <!-- Герой -->
       <section class="hero">
         <div class="hero__box container">
@@ -284,7 +289,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Постійні клієнти -->
       <section class="clients">
         <div>
@@ -340,7 +345,9 @@
     <footer class="footer">
       <div class="footer__box container">
         <div class="footer__cont">
-          <a href="" class="footer__logo">Web<span class="footer__style">Studio</span></a>
+          <a href="" class="footer__logo"
+            >Web<span class="footer__style">Studio</span></a
+          >
           <address>
             <ul class="footer__list">
               <li class="footer__item">
@@ -410,7 +417,8 @@
                 name="user-footer__emal"
                 class="footer__input"
                 placeholder="E-mail"
-                required/>
+                required
+              />
             </label>
             <button type="submit" class="footer__btn">
               Підписатися
@@ -423,7 +431,7 @@
       </div>
     </footer>
     <!-- Модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal__form">
           <button type="button" class="modal__btn" data-modal-close>
@@ -448,35 +456,41 @@
               </label>
             </li>
             <li class="modal__item">
-              <label class="modal__info">Телефон
+              <label class="modal__info"
+                >Телефон
                 <input
                   type="tel"
                   name="user-tel"
                   class="modal__input"
-                  required/>
+                  required
+                />
                 <svg class="modal__icon" width="18" height="18">
                   <use href="./img/icons.svg#icon-phone-black-1"></use>
                 </svg>
               </label>
             </li>
             <li class="modal__item">
-              <label class="modal__info">Пошта
+              <label class="modal__info"
+                >Пошта
                 <input
                   type="email"
                   name="user-email"
                   class="modal__input"
-                  require/>
+                  require
+                />
                 <svg class="modal__icon" width="18" height="18">
                   <use href="./img/icons.svg#icon-email-black-1"></use>
                 </svg>
               </label>
             </li>
             <li class="modal__item">
-              <label class="modal__info">Коментар
+              <label class="modal__info"
+                >Коментар
                 <textarea
                   class="modal__message"
                   name="user-message"
-                  placeholder="Введіть текст">
+                  placeholder="Введіть текст"
+                >
                 </textarea>
               </label>
             </li>
@@ -488,7 +502,8 @@
                 value="yes"
                 type="checkbox"
                 name="condition"
-                required/>
+                required
+              />
               <div class="modal__checkboxing">
                 <svg class="modal__checked" width="11" height="11">
                   <use href="./img/icons.svg#icon-checkmark"></use>
@@ -503,8 +518,58 @@
           <button type="submit" class="modal__close">Відправити</button>
         </form>
       </div>
-    </div> --> 
+    </div>
+
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <button class="modal__btn" data-menu-close>
+          <svg class="modal__icon-close" width="18px" height="18px">
+            <use href="./img/icons.svg#icon-close-black-2-1"></use>
+          </svg>
+        </button>
+        <div class="menu__sections">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__contact">
+          <ul class="menu__contakts">
+            <li class="menu__items">
+              <a href="" class="menu__phone">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__items">
+              <a href="" class="menu__mail">info@devstudio.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__networks">
+          <ul class="menu__network">
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Instagram</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Twitter</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Facebook</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

@@ -10,6 +10,7 @@
 @import "./components/header";
 @import "./sections/portfolio-sections/portfolio";
 @import "./components/footer";
+@import "./components/menu";
 
 .header__item:nth-child(2)::after {
     content: "";

@@ -1,0 +1,97 @@
+.backdrops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  transition: opacity 250ms cubic-bezier(.27,.87,.51,.9);
+}
+
+.is-hidden {
+  display: none;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.is-hidden .menu {
+  transform: translate(0);
+}
+
+.menu {
+  background-color: $footer-logo;
+  width: 480px;
+  height: 768px;
+  position: relative;
+
+  &__link {
+    @include text($color: $title-color, $size: 40px, $weight: 500);
+    line-height: normal;
+    letter-spacing: 0.8px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__sections {
+    padding-top: 48px;
+    padding-left: 40px;
+    margin-bottom: 302px;
+  }
+
+  &__phone {
+    @include text($color: $basic-color, $size: 24px, $weight: 500);
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__mail {
+    @include text($color: $basic-color, $size: 24px, $weight: 500);
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__items {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contact {
+    padding-left: 40px;
+    padding-bottom: 64px;
+  }
+
+  &__networks {
+    padding-left: 40px;
+  }
+
+  &__network {
+    display: flex;
+  }
+
+  &__networks-item {
+    margin-right: 20px;
+  }
+
+  &__networks-link {
+    @include text($color: $accent-color, $size: 18px, $weight: 500);
+    line-height: 22px;
+    letter-spacing: 0.36px;
+  }
+}

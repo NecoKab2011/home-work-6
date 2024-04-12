@@ -1,7 +1,6 @@
 .footer {
     background-color: $bg-color;
     padding: 60px 0;
-    max-width: 480px;
 
     &__logo {
       @include text($color: $accent-color, $size: 26px, $weight: 700);

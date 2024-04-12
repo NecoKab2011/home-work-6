@@ -49,8 +49,8 @@
         letter-spacing: 1.56px;
         text-transform: uppercase;
         max-width: 360px;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 30px;
         animation-name: hero-title-move;
         animation-duration: 3s;
@@ -89,14 +89,14 @@
       
       &__btn {
         padding: 10px 24px;
-        margin-left: 140px;
-        margin-right: 140px;
+        margin-left: auto;
+        margin-right: auto;
         @extend %button-style;
 
         @media screen and (min-width: 768px) {
           padding: 10px 24px;
-          margin-left: 284px;
-          margin-right: 284px;
+          margin-left: auto;
+        margin-right: auto;
         }
 
         @media screen and (min-width: 1200px) {
