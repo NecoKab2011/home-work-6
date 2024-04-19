@@ -66,7 +66,12 @@
             </a>
           </li>
         </ul>
-      </div>
+      <button type="button" class="header__menu" data-menu-open>
+        <svg class="header__svg-menu" width="40px" height="40px">
+          <use href="./img/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
     </header>
     <main>
       <section class="portfolio">
@@ -360,5 +365,54 @@
         </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <button class="modal__btn" data-menu-close>
+          <svg class="modal__icon-close" width="18px" height="18px">
+            <use href="./img/icons.svg#icon-close-black-2-1"></use>
+          </svg>
+        </button>
+        <div class="menu__sections">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__contact">
+          <ul class="menu__contakts">
+            <li class="menu__items">
+              <a href="" class="menu__phone">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__items">
+              <a href="" class="menu__mail">info@devstudio.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__networks">
+          <ul class="menu__network">
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Instagram</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Twitter</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link">Facebook</a>
+            </li>
+            <li class="menu__networks-item">
+              <a href="" class="menu__networks-link"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

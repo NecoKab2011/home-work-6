@@ -45,8 +45,6 @@
   
   &__list{
     display: none;
-    gap: 50px;
-    margin-left: 93px;
     @media screen and (min-width: 768px) {
       @include flex($justify: start, $align: start);
     }
@@ -118,6 +116,12 @@
       @include text($color: $basic-color, $size: 14px, $weight: 500);
       letter-spacing: 0.28px;
 
+      &:nth-child(1) {
+        margin-right: 30px;
+
+      
+      }
+
       &{
         @include flex($justify: start);
         margin-left: auto;
@@ -138,9 +142,13 @@
 
     &__menu {
       border: none;
+      background: $footer-logo;
       @media screen and (min-width: 768px) {
           display: none;
       }
   }
 
-  }
+  &__svg-menu {
+    background-color: $footer-logo;
+    }
+}

@@ -50,7 +50,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -141,8 +141,6 @@ body {
 }
 .header__list {
   display: none;
-  gap: 50px;
-  margin-left: 93px;
 }
 @media screen and (min-width: 768px) {
   .header__list {
@@ -210,6 +208,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.28px;
 }
+.header__cont:nth-child(1) {
+  margin-right: 30px;
+}
 .header__cont {
   display: flex;
   align-items: center;
@@ -229,11 +230,15 @@ body {
 }
 .header__menu {
   border: none;
+  background: #fff;
 }
 @media screen and (min-width: 768px) {
   .header__menu {
     display: none;
   }
+}
+.header__svg-menu {
+  background-color: #fff;
 }
 
 .hero {
@@ -244,7 +249,6 @@ body {
   align-items: start;
   justify-content: start;
   flex-wrap: wrap;
-  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
@@ -257,7 +261,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1600px;
     content: "";
     display: block;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.svg);
@@ -382,6 +385,7 @@ body {
     align-items: start;
     justify-content: center;
     flex-wrap: wrap;
+    width: 1170px;
   }
 }
 .advantages__item {
@@ -543,12 +547,12 @@ body {
 .team__title {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 60px;
   margin-bottom: 50px;
   font-size: 28px;
-  padding-left: 138px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -561,13 +565,17 @@ body {
   }
 }
 .team__box {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
-  gap: 30px;
-  text-align: center;
   display: block;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .team__box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__box {
@@ -679,11 +687,12 @@ body {
   align-items: start;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 15px;
   gap: 30px;
 }
 .clients__item {
   border-radius: 4px;
-  width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 @media screen and (min-width: 768px) {
@@ -700,11 +709,13 @@ body {
   display: block;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  width: 210px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .clients__company-link {
@@ -749,6 +760,13 @@ body {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.78px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    justify-content: start;
+  }
 }
 .footer__style {
   color: #fff;
@@ -762,9 +780,15 @@ body {
 }
 .footer__list {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
 }
-.footer__item {
-  margin-bottom: 9px;
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    align-items: start;
+  }
 }
 .footer__ct {
   color: rgba(255, 255, 255, 0.6);
@@ -792,7 +816,7 @@ body {
 .footer__box {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 95px;
 }
@@ -806,6 +830,12 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
 }
 .footer__sn-list {
   display: flex;
@@ -862,7 +892,7 @@ body {
 .footer__label {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -876,7 +906,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   color: #fff;

@@ -4,7 +4,7 @@
     background-color: $bg-color;
     @include flex($justify: start, $align: start);
 
-    max-width: 768px;
+    // max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     height: 400px;
@@ -20,7 +20,7 @@
       url(../img/hero-phone.svg);
 
       @media screen and (min-width: 768px) {
-      max-width: 1600px;
+      // max-width: 1600px;
       content: "";
       display: block;
       background-image:linear-gradient(

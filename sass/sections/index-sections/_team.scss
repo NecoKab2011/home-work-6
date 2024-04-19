@@ -7,11 +7,11 @@
   }
 
   &__title {
-    @include flex($justify: start, $align: start);
+    @include flex($justify: center, $align: start);
     padding-top: 60px;
     margin-bottom: 50px;
     font-size: 28px;
-    padding-left: 138px;
+    text-align: center;
 
     @media screen and (min-width: 1200px) {
       @include flex($justify: center, $align: start);
@@ -22,13 +22,12 @@
   }
 
   &__box {
-    @include flex($justify: start, $align: start);
-    gap: 30px;
-    text-align: center;
     display: block;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
-      
+      @include flex($justify: center, $align: start);
+      gap: 30px;
     }
 
     @media screen and (min-width: 1200px) {
