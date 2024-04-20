@@ -152,6 +152,7 @@ body {
 @media screen and (min-width: 768px) {
   .header__address {
     display: block;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -246,14 +247,14 @@ body {
   height: 768px;
   position: relative;
 }
-.menu__link {
+j .menu__link {
   color: #212121;
   font-size: 40px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
 }
-.menu__link:hover {
+j .menu__link:hover {
   color: #2196f3;
 }
 .menu__sections {
@@ -633,7 +634,6 @@ body {
 }
 .footer__name {
   width: auto;
-  width: 358px;
   height: 50px;
 }
 .footer__input {

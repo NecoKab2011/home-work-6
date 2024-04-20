@@ -23,10 +23,13 @@
 }
 
 .menu {
+
   background-color: $footer-logo;
   width: 480px;
   height: 768px;
   position: relative;
+  j
+  
 
   &__link {
     @include text($color: $title-color, $size: 40px, $weight: 500);
