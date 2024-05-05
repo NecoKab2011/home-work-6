@@ -187,6 +187,7 @@ body {
 }
 .header__cont:nth-child(1) {
   margin-right: 30px;
+  margin-top: 10px;
 }
 .header__cont {
   display: flex;

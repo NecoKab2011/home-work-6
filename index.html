@@ -25,7 +25,9 @@
     <!-- Хедер -->
     <header class="header">
       <div class="header__box container">
-        <a href="" class="header__logo">Web<span class="header__style">Studio</span></a>
+        <a href="" class="header__logo"
+          >Web<span class="header__style">Studio</span></a
+        >
         <nav>
           <ul class="header__list">
             <li class="header__item">
@@ -122,19 +124,46 @@
           <h2 class="owe-work__title">Чим ми займаємося</h2>
           <ul class="owe-work__box container">
             <li class="owe-work__item">
-              <img src="./img/img-4.jpg" alt="computer" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/adv1@1x-desktop.webp 1x,
+                    ./img/desktop/adv1@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/img-4.jpg" alt="computer" width="370" />
+              </picture>
               <div class="owe-work__bg">
                 <h3 class="owe-work__title2">Десктопні додатки</h3>
               </div>
             </li>
             <li class="owe-work__item">
-              <img src="./img/img-5.jpg" alt="laptop" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/adv2@1x-desktop.webp 1x,
+                    ./img/desktop/adv2@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/img-5.jpg" alt="computer" width="370" />
+              </picture>
               <div class="owe-work__bg">
                 <h3 class="owe-work__title2">Мобільні додатки</h3>
               </div>
             </li>
             <li class="owe-work__item">
-              <img src="./img/img-6.jpg" alt="tablet" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/adv3@1x-desktop.webp 1x,
+                    ./img/desktop/adv3@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/img-6.jpg" alt="computer" width="370" />
+              </picture>
               <div class="owe-work__bg">
                 <h3 class="owe-work__title2">Дизайнерські рішення</h3>
               </div>
@@ -148,7 +177,16 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__box">
             <li class="team__item">
-              <img src="./img/igor-demyanenko.jpg" alt="" width="270" />
+              <picture>
+                <source srcset="./img/desktop/team1@1x-desktop.webp 1x, ./img/desktop/team1@2x-desktop.webp 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./img/tablet/team1@1x-tablet.webp 1x, ./img/tablet/team1@2x-tablet.webp 2x"
+                media="(min-width: 768px)">
+                <source srcset="./img/mobile/team1@1x-mobile.webp 1x, ./img/mobile/team1@2x-mobile.webp 2x"
+                media="(max-width: 767px)">
+                <img src="./img/igor-demyanenko.jpg" alt="" width="270" />
+              </picture>
+              
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__profession">Product Designer</p>
               <ul class="team-sn__list">
@@ -183,7 +221,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./img/olga-ryepina.jpg" alt="" width="270" />
+              <picture>
+                <source srcset="./img/desktop/team2@1x-desktop.webp 1x, ./img/desktop/team2@2x-desktop.webp 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./img/tablet/team2@1x-tablet.webp 1x, ./img/tablet/team2@2x-tablet.webp 2x"
+                media="(min-width: 768px)">
+                <source srcset="./img/mobile/team2@1x-mobile.webp 1x, ./img/mobile/team2@2x-mobile.webp 2x"
+                media="(max-width: 767px)">
+                <img src="./img/olga-ryepina.jpg" alt="" width="270" />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__profession">Frontend Developer</p>
               <ul class="team-sn__list">
@@ -253,7 +299,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./img/myhaylo-yermakov.jpg" alt="" width="270" />
+              <picture>
+                <source srcset="./img/desktop/team4@1x-desktop.webp 1x, ./img/desktop/team4@2x-desktop.webp 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./img/tablet/team4@1x-tablet.webp 1x, ./img/tablet/team4@2x-tablet.webp 2x"
+                media="(min-width: 768px)">
+                <source srcset="./img/mobile/team4@1x-mobile.webp 1x, ./img/mobile/team4@2x-mobile.webp 2x"
+                media="(max-width: 767px)">
+                <img src="./img/myhaylo-yermakov.jpg" alt="" width="270" />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__profession">UI Designer</p>
               <ul class="team-sn__list">
@@ -345,7 +399,9 @@
     <footer class="footer">
       <div class="footer__box container">
         <div class="footer__cont">
-          <a href="" class="footer__logo">Web<span class="footer__style">Studio</span></a>
+          <a href="" class="footer__logo"
+            >Web<span class="footer__style">Studio</span></a
+          >
           <address>
             <ul class="footer__list">
               <li class="footer__item">
@@ -365,10 +421,7 @@
                 >
               </li>
               <li class="footer__item">
-                <a 
-                href="tell:+380991111111" 
-                target="_blank" 
-                class="footer__ct"
+                <a href="tell:+380991111111" target="_blank" class="footer__ct"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -505,11 +558,11 @@
                 name="condition"
                 required
               />
-              <div class="modal__checkboxing">
+              <span class="modal__checkboxing">
                 <svg class="modal__checked" width="11" height="11">
                   <use href="./img/icons.svg#icon-checkmark"></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <p class="modal__form-text">
               Погоджуюся з розсилкою та приймаю

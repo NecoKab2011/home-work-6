@@ -1,114 +1,125 @@
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-color: $bg-color;
-    @include flex($justify: start, $align: start);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $bg-color;
+  @include flex($justify: start, $align: start);
 
-    // max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
+  // max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
 
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../../img/mobile/hero@1x-mobile.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../img/mobile/hero@2x-mobile.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    // max-width: 1600px;
     content: "";
     display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image:linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-      url(../img/hero-phone.svg);
-
-      @media screen and (min-width: 768px) {
-      // max-width: 1600px;
-      content: "";
-      display: block;
-      background-image:linear-gradient(
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        url(../img/hero-tablet.svg);
-      }
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../img/tablet/hero@1x-tablet.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../img/tablet/hero@2x-tablet.webp)
+  }
 
-      @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-      padding-bottom: 200px;
-      max-width: 1600px;
-      height: 600px;
-      content: "";
-      display: block;
-      background-image:linear-gradient(
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    content: "";
+    display: block;
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        url(../img/hero.jpg);
-      }
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../img/desktop/hero@1x-desktop.webp);
 
-      &__title {
-        @include text($color: $footer-logo, $size: 26px, $weight: 900);
-        font-family: Roboto;
-        text-align: center;
-        letter-spacing: 1.56px;
-        text-transform: uppercase;
-        max-width: 360px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        animation-name: hero-title-move;
-        animation-duration: 3s;
-        animation-iteration-count: initial;
-        
-        @media screen and (min-width: 768px) {
-          @include text($color: $footer-logo, $size: 44px, $weight: 900);
-          letter-spacing: 2.64px;
-          max-width: 696px;
-        }
-
-        @media screen and (min-width: 1200px) {
-        @include text($color: $footer-logo, $size: 44px, $weight: 900);
-        letter-spacing: 2.64px;
-        max-width: 696px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      }
-    
-    @keyframes hero-title-move {
-      0% {
-        transform: scale3d(0, 0, 0) translate(-200px, -200px);
-    
-      }
-    
-      50% {
-        transform: scale3d(0.7, 0.7, 0.7) translate(50px, 50px);
-    
-      }
-    
-      100% {
-        transform: scale3d(1, 1, 1) translate(0, 0);
-      }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../img/desktop/hero@2x-desktop.webp);
     }
-      
-      &__btn {
-        padding: 10px 24px;
-        margin-left: auto;
-        margin-right: auto;
-        @extend %button-style;
+  }
 
-        @media screen and (min-width: 768px) {
-          padding: 10px 24px;
-          margin-left: auto;
-        margin-right: auto;
-        }
+  &__title {
+    @include text($color: $footer-logo, $size: 26px, $weight: 900);
+    font-family: Roboto;
+    text-align: center;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    animation-name: hero-title-move;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
 
-        @media screen and (min-width: 1200px) {
-          padding: 10px 32px;
-          margin-left: auto;
-          margin-right: auto;
-        }
+    @media screen and (min-width: 768px) {
+      @include text($color: $footer-logo, $size: 44px, $weight: 900);
+      letter-spacing: 2.64px;
+      max-width: 696px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include text($color: $footer-logo, $size: 44px, $weight: 900);
+      letter-spacing: 2.64px;
+      max-width: 696px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @keyframes hero-title-move {
+    0% {
+      transform: scale3d(0, 0, 0) translate(-200px, -200px);
+    }
+
+    50% {
+      transform: scale3d(0.7, 0.7, 0.7) translate(50px, 50px);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1) translate(0, 0);
+    }
+  }
+
+  &__btn {
+    padding: 10px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %button-style;
+
+    @media screen and (min-width: 768px) {
+      padding: 10px 24px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
-
-  
-  
-
- 
-  
+}

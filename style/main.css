@@ -258,13 +258,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-phone.svg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img/mobile/hero@1x-mobile.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../../img/mobile/hero@2x-mobile.webp);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     content: "";
     display: block;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../img/tablet/hero@1x-tablet.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../image/hero-table@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -276,6 +286,11 @@ body {
     content: "";
     display: block;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../image/hero-table@2x.jpg);
   }
 }
 .hero__title {
@@ -618,11 +633,6 @@ body {
   margin-bottom: 30px;
   background: #fff;
 }
-.team__box > .team__item-sn__icon {
-  width: 20px;
-  height: 20px;
-  fill: rgb(175, 177, 184);
-}
 .team__box > .team__item-sn__list {
   display: flex;
   align-items: start;
@@ -659,6 +669,12 @@ body {
 .team__box > .team__item-sn__link {
   width: 20px;
   height: 20px;
+}
+
+.team-sn__icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(175, 177, 184);
 }
 
 .clients {
